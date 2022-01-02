@@ -1,0 +1,409 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="factory_base" id="9O,$M~u?JUUp+,Yw{oWo" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">battery</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Pl8/qy]~WdOKlHE2zH#V">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="p=KMLY@cN.b:u{BKRB-Z">
+            <field name="TEXT">बैटरी</field>
+            <next>
+              <block type="field_image" id="~?Od}=vbuf]p#JaWH4p[">
+                <field name="SRC">https://assets.dryicons.com/uploads/icon/svg/2687/battery.svg</field>
+                <field name="WIDTH">60</field>
+                <field name="HEIGHT">60</field>
+                <field name="ALT">battery</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="#IAgP:1)?K)KOlu%pO-0" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="z|py1+K-2*_{QwAi.NMD" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="+17YYO8Nri%kif8C#;K["></shadow>
+      <block type="type_other" id="wCfnbM3zw$oM}!~O6Nx=">
+        <field name="TYPE">battery</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="_Xh}W654XVjFNOMgqZrS">
+        <mutation colour="#5ba5a5"></mutation>
+        <field name="HUE">180</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="fb_mDP%Nuu)A$%nAmn_w" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">connect</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="p@d(fl*Z$@8g)M[J{ZlR">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="naAP2dazZ-$_.sp_11*r">
+            <field name="TEXT">जोड़ो</field>
+            <next>
+              <block type="field_image" id="C0Cn}fVjRDi6i|en,jMQ">
+                <field name="SRC">https://assets.dryicons.com/uploads/icon/svg/2656/wired.svg</field>
+                <field name="WIDTH">40</field>
+                <field name="HEIGHT">40</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="xEf:Hmu):SUhc`Adzz{H">
+            <field name="INPUTNAME">wire1</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="5#/*HsaKrx!8fpkeC7)W"></shadow>
+              <block type="type_group" id="joV`Z0mU5k|b.f{N7!RM">
+                <mutation types="2"></mutation>
+                <value name="TYPE0">
+                  <block type="type_other" id=",+]+Ft}7qh=Fmpw1w-(c">
+                    <field name="TYPE">wire_red</field>
+                  </block>
+                </value>
+                <value name="TYPE1">
+                  <block type="type_other" id="[=$W^YvBj0PO:Y1cFA~(">
+                    <field name="TYPE">wire_black</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="input_value" id="e@z5!tkH9;y5SBg]45^m">
+                <field name="INPUTNAME">battery</field>
+                <field name="ALIGN">LEFT</field>
+                <value name="TYPE">
+                  <shadow type="type_null" id="hXu.nYCki[+2D!Y;@BRW"></shadow>
+                  <block type="type_other" id="atB69m*#JssM~t5!IArp">
+                    <field name="TYPE">battery</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="input_value" id="fOwDOQ]gXRprd3.7M#5*">
+                    <field name="INPUTNAME">wire2</field>
+                    <field name="ALIGN">LEFT</field>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="7wrDeV7J,x|-~X*pjHn!"></shadow>
+                      <block type="type_group" id="0BafJVnWG6Eiw5)5ZlQ|">
+                        <mutation types="2"></mutation>
+                        <value name="TYPE0">
+                          <block type="type_other" id="j?.z4(A%y~ES5Ff@RDSj">
+                            <field name="TYPE">wire_red</field>
+                          </block>
+                        </value>
+                        <value name="TYPE1">
+                          <block type="type_other" id="O?w$V%j:w16Y9tncB.l4">
+                            <field name="TYPE">wire_black</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="`1J3;;%CRgH-N}m!NzGp" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="}M|$EWi77@._=*[0o`r/" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="K_v]N4FKKP{Z71VD$vr$"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="F:^=.`O$PDtFK7*82G-4"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="51G?V#O`zva].X;X+;rN">
+        <mutation colour="#5ba55b"></mutation>
+        <field name="HUE">120</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=B4gCu#S!T[Y(Cvcm7{^" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">wire_red</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="3EH5Hd[ayev-#|n+9-qx">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="}5Z_5TYj@fO^c[-bgKN+">
+            <field name="TEXT">लाल तार</field>
+            <next>
+              <block type="field_image" id="iO*M6avlG?s=}OlqTO#c">
+                <field name="SRC">https://drive.google.com/uc?export=download&amp;id=1FKP6bMLN8ayBOA5tpVVc63YcHyXwJ28c</field>
+                <field name="WIDTH">100</field>
+                <field name="HEIGHT">30</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="~@o_]kIgB{/_n^Vlk[Pb" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="VUViW)}^L[e`Io4CZ4B?" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="usmnv1N$WR%FF6=C],nx"></shadow>
+      <block type="type_other" id="]lz~/mKZS)?:P%`71y)h">
+        <field name="TYPE">wire_red</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Jygsb-^duOF?gR$w(lCq">
+        <mutation colour="#a55b6d"></mutation>
+        <field name="HUE">345</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=B4gCu#S!T[Y(Cvcm7{^" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">wire_black</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="3EH5Hd[ayev-#|n+9-qx">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="}5Z_5TYj@fO^c[-bgKN+">
+            <field name="TEXT">काला तार</field>
+            <next>
+              <block type="field_image" id="iO*M6avlG?s=}OlqTO#c">
+                <field name="SRC">https://drive.google.com/uc?export=download&amp;id=1EVCawk0Ynr6q7mgK4a8xw-IZSM3X8b0G</field>
+                <field name="WIDTH">100</field>
+                <field name="HEIGHT">30</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="~@o_]kIgB{/_n^Vlk[Pb" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="VUViW)}^L[e`Io4CZ4B?" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="usmnv1N$WR%FF6=C],nx"></shadow>
+      <block type="type_other" id="]lz~/mKZS)?:P%`71y)h">
+        <field name="TYPE">wire_black</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Jygsb-^duOF?gR$w(lCq">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="?y([J+oF`^WwPt/YIJc!" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rotate</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="oVmUR0=TEQ,=j5^s=,)h">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=",BDy-?lIt0F6^Vhus{S1">
+            <field name="TEXT">घुमाएँ</field>
+            <next>
+              <block type="field_image" id="{iCR7i3-To@88[c+4ylF">
+                <field name="SRC">https://assets.dryicons.com/uploads/icon/svg/13015/d9d142be-2eb9-49d5-a189-58352640c754.svg</field>
+                <field name="WIDTH">50</field>
+                <field name="HEIGHT">50</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id="0DjekXLbM/P~|^QbD?:]">
+            <field name="INPUTNAME">NAME</field>
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_number" id="zRi]=ndb81Pv44f_}:X[">
+                <field name="VALUE">0</field>
+                <field name="FIELDNAME">angle</field>
+                <field name="MIN">0</field>
+                <field name="MAX">270</field>
+                <field name="PRECISION">90</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="RE[of3Xtkv#SU^8J`zf|"></shadow>
+              <block type="type_other" id="_bK%=gex4JJF+9sANA)@">
+                <field name="TYPE">magnet</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="SZo6az.oR:b@[?*oV}#^" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="#5+!|R#U6R`KI,Zsw|H|" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="?wmq*`Fvi+t3zM%R.15G"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=",w1t/YL2^VG4mLMtw{R("></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="0_b;hkHZ_CTCJJE+iO8m">
+        <mutation colour="#93a55b"></mutation>
+        <field name="HUE">75</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="KMjlab@L[H!c#C-dVbA3" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="LEFT"></mutation>
+    <field name="NAME">magnet</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">LEFT</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="_[Cq;K;dS:I{-ri~.-5F">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="G5_Xd4@er^2MjGVPL=Pv">
+            <field name="TEXT">चुंबक</field>
+            <next>
+              <block type="field_image" id="@mqnb5-m1msFOveLWBnK">
+                <field name="SRC">https://drive.google.com/uc?export=download&amp;id=1xibyqHXhroyqIi09YVGSuZzSYcfnteJ2</field>
+                <field name="WIDTH">60</field>
+                <field name="HEIGHT">60</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="XX@+FWFo[{8,F`E~DWr$" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="8VW)q}U/R6LfZ.R|`t:n" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="OUTPUTTYPE">
+      <shadow type="type_null" id="KGI}mdG^g2U-U%R)0Od1"></shadow>
+      <block type="type_other" id="NVfGpg^U?nOn;^$utRBN">
+        <field name="TYPE">magnet</field>
+      </block>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="Oy32?;,BH{YQke.r;VSx">
+        <mutation colour="#a55b93"></mutation>
+        <field name="HUE">315</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="PhZ/(YpLeSa)_)WD^`s." deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">disconnect</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="g5DC-^!Y4_qp|cm|B9dn">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="^H:Pq1*$?a,h6!t#G%Zo">
+            <field name="TEXT">डिस्कनेक्ट</field>
+            <next>
+              <block type="field_image" id="q7aLN1ujed,$Usa.f.!B">
+                <field name="SRC">https://assets.dryicons.com/uploads/icon/svg/3458/delete.svg</field>
+                <field name="WIDTH">40</field>
+                <field name="HEIGHT">40</field>
+                <field name="ALT">*</field>
+                <field name="FLIP_RTL">FALSE</field>
+                <next>
+                  <block type="field_image" id="@vLy{6y6RS#]nrFMZ-zr">
+                    <field name="SRC">https://assets.dryicons.com/uploads/icon/svg/2656/wired.svg</field>
+                    <field name="WIDTH">40</field>
+                    <field name="HEIGHT">40</field>
+                    <field name="ALT">*</field>
+                    <field name="FLIP_RTL">FALSE</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="Ee*S6VCXKPLVC|234e4p" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="L8MweP/!b8Q.)VE2~pw~" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="p32_g(?)TxK)r0a^lh99"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="MAhN81#]rr(?mt7=7yLi"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="D9+CC(eD~|ttxt?Y?dnN">
+        <mutation colour="#a55b6d"></mutation>
+        <field name="HUE">345</field>
+      </block>
+    </value>
+  </block></xml>

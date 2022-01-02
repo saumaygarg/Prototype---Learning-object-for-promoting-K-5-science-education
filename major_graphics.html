@@ -1,0 +1,346 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      .parksetting {
+        height: 60%;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      :root {
+        /*variables*/
+        --angle1f: -25deg;
+        --angle2f: -45deg;
+        --angle1b: 25deg;
+        --angle2b: 45deg;
+      }
+
+      #swing_kid {
+        height: 25%;
+        width: auto;
+        position: absolute;
+        left: 420px;
+        top: 96px;
+        /*
+            -moz-animation: 1s ease 0s normal none swing;
+            -moz-transform-origin: center top;
+            -webkit-animation: swing 1s ease-in-out;
+      */
+
+        -webkit-transform-origin: top center;
+      }
+
+      @-webkit-keyframes swing1f {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(var(--angle1f));
+        }
+      }
+
+      @-webkit-keyframes swing2f {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(var(--angle2f));
+        }
+      }
+
+      @-webkit-keyframes swing1b {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(var(--angle1b));
+        }
+      }
+
+      @-webkit-keyframes swing2b {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(var(--angle2b));
+        }
+      }
+
+      .topnav {
+        background-color: yellow;
+        overflow: hidden;
+      }
+
+      /* Style the links inside the navigation bar */
+      .topnav {
+        float: right;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        padding-bottom: 100px;
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        color: rgb(0, 0, 0);
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid rgb(148, 144, 144);
+        top: 1px;
+        bottom: 50px;
+        width: 35%;
+        height: 75%;
+      }
+
+      /* The Close Button */
+      .close {
+        color: #1a1414;
+        float: right;
+        font-size: 34px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .para{
+        text-align: left;
+      }
+
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        border-radius: 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+      }
+
+      .button1:hover {
+        background-color: #008CBA;
+        color: white;
+      }
+
+
+      span {
+        font-weight:600;
+        font-size: 1.4em;
+        font-stretch: extra-expanded;
+        text-align: center;
+ 
+      }
+    </style>
+  </head>
+
+  <script>
+    var score = 0;
+
+    window.onload = function () {
+      document.getElementById("score").innerHTML = score;
+    };
+
+    function swing1f() {
+      var swing = document.getElementById("swing_kid");
+      swing.style.animation = "swing1f 1s ease-in-out ";
+      score = score + 2;
+      document.getElementById("score").innerHTML = score;
+    }
+
+    function swing2f() {
+      var swing = document.getElementById("swing_kid");
+      swing.style.animation = "swing2f 1s ease-in-out";
+      score = score - 1;
+      document.getElementById("score").innerHTML = score;
+    }
+
+    function swing1b() {
+      var swing = document.getElementById("swing_kid");
+      swing.style.animation = "swing1b 1s ease-in-out ";
+      score = score + 2;
+      document.getElementById("score").innerHTML = score;
+    }
+
+    function swing2b() {
+      var swing = document.getElementById("swing_kid");
+      swing.style.animation = "swing2b 1s ease-in-out";
+      score = score - 1;
+      document.getElementById("score").innerHTML = score;
+    }
+
+    function label_emotions() {}
+  </script>
+
+  <body>
+    <div class="topnav">
+      <button onclick="label_emotions()">
+        <img
+          src="https://assets.dryicons.com/uploads/icon/svg/2468/apple.svg"
+          height="68"
+        />
+        <div id="score"></div>
+      </button>
+
+     
+
+      <button id="myBtn">
+        <img src="https://www.svgrepo.com/show/372448/form.svg" height="70" />
+        <div>भावनाओं को नाम दें</div>
+      </button>
+
+       <!-- The Modal -->
+       <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          
+            <span>भावनाओं को नाम दें <br>
+            (Name the feelings)<br></p></span>
+            <form class="para">
+            <ul>
+            <p class="para"><li>आपके अनुसार झूला झूल रहा बच्चा क्या भावना महसूस कर रहा है? (What
+            emotion according to you the kid on swing is feeling?)</li></p>
+            
+            <input type="radio" id="happy" name="feeling">प्रसन्न (Happy)<br>
+            <input type="radio" id="scared" name="feeling">डरा हुआ (Scared)<br>
+            <input type="radio" id="no" name="feeling">कोई भावना नहीं (No emotion)<br><br>
+            <p class="para" font-weight="600"><li>आप क्या भावना महसूस कर रहे हैं? (What emotion are you feeling?)</li></p>
+            <input type="radio" id="happy" name="feeling2">प्रसन्न (Happy)<br>
+            <input type="radio" id="scared" name="feeling2">डरा हुआ (Scared)<br>
+            <input type="radio" id="no" name="feeling2">कोई भावना नहीं (No emotion)<br>
+            
+          </ul>
+          </form>
+          <button class="button button1">Submit</button>
+          </p>
+        </div>
+      </div>
+
+      <button id="myb">
+        <img src="https://www.svgrepo.com/show/132885/woman.svg" height="70" />
+        <div>मेरी मदद करो</div>
+      </button>
+
+      
+      <!-- The Modal -->
+      <div id="myM" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          
+            <span>फ्लेमिंग लेफ्ट हैंड रूल<br>
+              (Fleming's Left Hand Rule)<br><br></p></span>
+            <p>स्पष्टीकरण के लिए इस वीडियो को देखें<br>(Check out this video for explanation!)<br></p>
+
+            <iframe width="386" height="237" src="https://www.youtube.com/embed/Y8ru1CMgJM0">
+            </iframe>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+   
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+    
+
+      // Get the <span> element that closes the modal
+      var sp = document.getElementsByClassName("close")[0];
+      var sp2 = document.getElementsByClassName("button button1")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+
+      // When the user clicks on <span> (x), close the modal
+      sp.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      sp2.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+
+        if (event.target == m) {
+          m.style.display = "none";
+        }
+      };
+  // Get the modal
+  var m = document.getElementById("myM");
+
+  // Get the button that opens the modal
+  var b = document.getElementById("myb");
+
+  // Get the <span> element that closes the modal
+  var s = document.getElementsByClassName("close")[1];
+
+  // When the user clicks the button, open the modal
+  b.onclick = function () {
+    m.style.display = "block";
+  };
+
+
+  // When the user clicks on <span> (x), close the modal
+  s.onclick = function () {
+    m.style.display = "none";
+  };
+
+  // When the user clicks anywhere outside of the modal, close it
+</script>
+
+    <img class="parksetting" src="parksetting2.png" />
+    <img id="swing_kid" src="swing+kid.png" />
+    <br />
+    <button onclick="swing1f()">1f</button>
+    <button onclick="swing2f()">2f</button>
+    <button onclick="swing1b()">1b</button>
+    <button onclick="swing2b()">2b</button>
+  </body>
+</html>
